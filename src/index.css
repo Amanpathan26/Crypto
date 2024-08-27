@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.home-main-conatiner {
+    background-image: url('https://libertystreeteconomics.newyorkfed.org/wp-content/uploads/sites/2/2023/08/LSE_2023_cryptocurr-diff_460_martin.jpg?w=460');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.search-main-container{
+    background-image: url('https://pixelplex.io/next/images/cryptoapi/header/cryptoapi-bg-header-1600.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+table {
+    backdrop-filter: blur(7px);
+}
+
+td {
+    width: 20%;
+}
+
+
+button {
+    padding: 0.2rem 0.8rem;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.438);
+    transition: 0.5s;
+}
+
+button:hover {
+    color: black;
+    background-color: rgba(255, 255, 255);
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coin-details-right-bg-img{
+    background-image: url('https://cdn.pixabay.com/photo/2018/01/18/07/31/bitcoin-3089728_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media screen and ( max-width:639px ) {
+    .main-right-small-table{
+        right: -350px;
+    }
+
+    .left-coin-details-container{
+        width:90%;
+        margin: 0 auto; 
+    }
+
+    .headerForm{
+        width:90%;
+    }
+
+    button {
+        padding: 0.1rem 0.6rem;
+        border: 1px solid #ffffff;
+        border-radius: 4px;
+        background-color: rgba(255, 255, 255, 0.438);
+        transition: 0.5s;
+        margin-left: 0.4rem;
+        font-size: 14px;
+    }
+}

@@ -29,7 +29,7 @@ function CrytoTable({exchangeData, loader, currencySymbolInr }) {
                 <tbody onClick={() => { navigate(`/coin/${item.id}`) }} key={i} className="table-body border-b h-28 sm:text-xl text-white hover:bg-slate-500">
 
                   <tr>
-                    <td className="w-[25%]"><img className="w-[30%] min-w-14 mx-auto" src={item.image}></img> <p>{item.symbol.toUpperCase()}</p></td>
+                    <td className="w-[25%] py-3"><img className="w-[30%] min-w-14 mx-auto" src={item.image}></img> <p>{item.symbol.toUpperCase()}</p></td>
                     <td>{item.name}</td>
                     <td>{currencySymbolInr ? '₹' + ' ' + item.current_price : '$' + item.current_price}</td>
                     <td style={profit ? { color: '#32ee21' } : { color: 'red' }}>{profit ? '+' + item.price_change_percentage_24h.toFixed(2) : item.price_change_percentage_24h.toFixed(2)}</td>

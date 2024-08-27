@@ -20,7 +20,7 @@ function SearchItem({ exchangeData, currency }) {
       {
         filteredData.length == 0 ? 
         (<div className='text-center font-bold text-4xl mt-32'>Coin not found...</div>) :
-        (<div className='search-main-container'>
+        (<div className='search-main-container h-[calc(100%-117px)] sm:h-[calc(100%-80px)]'>
          <CrytoTable exchangeData={filteredData} />
         </div>)
       }
